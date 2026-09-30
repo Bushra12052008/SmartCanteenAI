@@ -1,334 +1,212 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><html>
 <head>
-    <title>Smart Canteen AI</title>
+    <title>Smart Canteen AI</title><link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="style.css">
+<style>
+    .history-card {
+        background: white;
+        padding: 20px;
+        margin: 15px 0;
+        border-radius: 12px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
 
-    <style>
-        .history-card {
-            background: white;
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 12px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-        }
+    .history-card h3 {
+        margin-top: 0;
+    }
 
-        .history-card h3 {
-            margin-top: 0;
-        }
+    .history-card p {
+        margin: 6px 0;
+    }
+</style>
 
-        .history-card p {
-            margin: 6px 0;
-        }
-    </style>
-</head>
-
-<body>
-
-<header>
+</head><body><header>
     <h1>Smart Canteen AI</h1>
     <p>Smart College Canteen Demand Predictor</p>
-</header>
-
-
-<nav>
+</header><nav>
     <a href="#dashboard">Dashboard</a>
     <a href="#input">Input</a>
     <a href="#menu">Menu</a>
     <a href="#factors">Factors</a>
     <a href="#recommendation">AI Recommendation</a>
     <a href="#history">History</a>
-</nav>
+</nav><!-- DASHBOARD --><section id="dashboard"><h2>Today's Demand Prediction</h2>
 
+<div class="summary">
 
-<!-- DASHBOARD -->
-
-<section id="dashboard">
-
-    <h2>Today's Demand Prediction</h2>
-
-    <div class="summary">
-
-        <div>
-            <h3>Total Items</h3>
-            <p>6</p>
-        </div>
-
-        <div>
-            <h3>High Demand</h3>
-            <p>2 Items</p>
-        </div>
-
-        <div>
-            <h3>Wastage Risk</h3>
-            <p>Low</p>
-        </div>
-
+    <div>
+        <h3>Total Items</h3>
+        <p>6</p>
     </div>
 
-</section>
-
-
-<!-- INPUT -->
-
-<section id="input">
-
-    <h2>Prediction Input</h2>
-
-    <div class="input-box">
-
-        <label>Day</label>
-
-        <select>
-            <option>Monday</option>
-            <option>Tuesday</option>
-            <option>Wednesday</option>
-            <option>Thursday</option>
-            <option>Friday</option>
-            <option>Saturday</option>
-        </select>
-
-
-        <label>Weather</label>
-
-        <select>
-            <option>Sunny</option>
-            <option>Cloudy</option>
-            <option>Rainy</option>
-        </select>
-
-
-        <label>Holiday</label>
-
-        <select>
-            <option>No</option>
-            <option>Yes</option>
-        </select>
-
-
-        <label>College Event</label>
-
-        <select>
-            <option>No</option>
-            <option>Yes</option>
-        </select>
-
-
-        <button onclick="predictDemand()">
-            Predict Demand
-        </button>
-
+    <div>
+        <h3>High Demand</h3>
+        <p>2 Items</p>
     </div>
 
-</section>
-
-
-<!-- FOOD DEMAND -->
-
-<section id="menu">
-
-    <h2>Food Demand Prediction</h2>
-
-    <div class="menu">
-
-
-        <div class="food-card">
-
-            <h3>Veg Burger</h3>
-
-            <p>Predicted Demand</p>
-
-            <strong id="burger-demand">45</strong>
-
-            <p id="burger-preparation">
-                Suggested Preparation: 50
-            </p>
-
-        </div>
-
-
-        <div class="food-card">
-
-            <h3>Veg Sandwich</h3>
-
-            <p>Predicted Demand</p>
-
-            <strong id="sandwich-demand">35</strong>
-
-            <p id="sandwich-preparation">
-                Suggested Preparation: 40
-            </p>
-
-        </div>
-
-
-        <div class="food-card">
-
-            <h3>Masala Dosa</h3>
-
-            <p>Predicted Demand</p>
-
-            <strong id="dosa-demand">55</strong>
-
-            <p id="dosa-preparation">
-                Suggested Preparation: 60
-            </p>
-
-        </div>
-
-
-        <div class="food-card">
-
-            <h3>Veg Fried Rice</h3>
-
-            <p>Predicted Demand</p>
-
-            <strong id="fried-rice-demand">65</strong>
-
-            <p id="fried-rice-preparation">
-                Suggested Preparation: 70
-            </p>
-
-        </div>
-
-
-        <div class="food-card">
-
-            <h3>Idli</h3>
-
-            <p>Predicted Demand</p>
-
-            <strong id="idli-demand">40</strong>
-
-            <p id="idli-preparation">
-                Suggested Preparation: 45
-            </p>
-
-        </div>
-
-
-        <div class="food-card">
-
-            <h3>Paneer Roll</h3>
-
-            <p>Predicted Demand</p>
-
-            <strong id="paneer-roll-demand">30</strong>
-
-            <p id="paneer-roll-preparation">
-                Suggested Preparation: 35
-            </p>
-
-        </div>
-
-
+    <div>
+        <h3>Wastage Risk</h3>
+        <p>Low</p>
     </div>
 
-</section>
+</div>
 
+</section><!-- INPUT --><section id="input"><h2>Prediction Input</h2>
 
-<!-- PREDICTION FACTORS -->
+<div class="input-box">
 
-<section id="factors">
+    <label>Day</label>
 
-    <h2>Prediction Factors</h2>
+    <select>
+        <option>Monday</option>
+        <option>Tuesday</option>
+        <option>Wednesday</option>
+        <option>Thursday</option>
+        <option>Friday</option>
+        <option>Saturday</option>
+    </select>
 
-    <div class="factors">
+    <label>Weather</label>
 
+    <select>
+        <option>Sunny</option>
+        <option>Cloudy</option>
+        <option>Rainy</option>
+    </select>
 
-        <div class="factor-card">
+    <label>Holiday</label>
 
-            <h3>📅 Day</h3>
+    <select>
+        <option>No</option>
+        <option>Yes</option>
+    </select>
 
-            <p>Monday</p>
+    <label>College Event</label>
 
-        </div>
+    <select>
+        <option>No</option>
+        <option>Yes</option>
+    </select>
 
+    <button onclick="predictDemand()">
+        Predict Demand
+    </button>
 
-        <div class="factor-card">
+</div>
 
-            <h3>☀️ Weather</h3>
+</section><!-- FOOD DEMAND --><section id="menu"><h2>Food Demand Prediction</h2>
 
-            <p>Sunny</p>
+<div class="menu">
 
-        </div>
-
-
-        <div class="factor-card">
-
-            <h3>🎉 Holiday</h3>
-
-            <p>No</p>
-
-        </div>
-
-
-        <div class="factor-card">
-
-            <h3>🏫 College Event</h3>
-
-            <p>No</p>
-
-        </div>
-
-
-        <div class="factor-card">
-
-            <h3>📊 Previous Sales</h3>
-
-            <p>Available</p>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-<!-- AI RECOMMENDATION -->
-
-<section id="recommendation">
-
-    <div class="recommendation">
-
-        <h2>🤖 AI Recommendation</h2>
-
-        <p id="ai-recommendation">
-
-            Based on the predicted demand, prepare food according
-            to the suggested quantities to reduce food wastage.
-
+    <div class="food-card">
+        <h3>Veg Burger</h3>
+        <p>Predicted Demand</p>
+        <strong id="burger-demand">45</strong>
+        <p id="burger-preparation">
+            Suggested Preparation: 50
         </p>
-
-        <button onclick="predictDemand()">
-            Generate Prediction
-        </button>
-
     </div>
 
-</section>
-
-
-<!-- HISTORY -->
-
-<section id="history">
-
-    <h2>Prediction History</h2>
-
-    <div id="history-list">
-
-        <p>Loading prediction history...</p>
-
+    <div class="food-card">
+        <h3>Veg Sandwich</h3>
+        <p>Predicted Demand</p>
+        <strong id="sandwich-demand">35</strong>
+        <p id="sandwich-preparation">
+            Suggested Preparation: 40
+        </p>
     </div>
 
-</section>
+    <div class="food-card">
+        <h3>Masala Dosa</h3>
+        <p>Predicted Demand</p>
+        <strong id="dosa-demand">55</strong>
+        <p id="dosa-preparation">
+            Suggested Preparation: 60
+        </p>
+    </div>
 
+    <div class="food-card">
+        <h3>Veg Fried Rice</h3>
+        <p>Predicted Demand</p>
+        <strong id="fried-rice-demand">65</strong>
+        <p id="fried-rice-preparation">
+            Suggested Preparation: 70
+        </p>
+    </div>
 
+    <div class="food-card">
+        <h3>Idli</h3>
+        <p>Predicted Demand</p>
+        <strong id="idli-demand">40</strong>
+        <p id="idli-preparation">
+            Suggested Preparation: 45
+        </p>
+    </div>
 
-<script>
+    <div class="food-card">
+        <h3>Paneer Roll</h3>
+        <p>Predicted Demand</p>
+        <strong id="paneer-roll-demand">30</strong>
+        <p id="paneer-roll-preparation">
+            Suggested Preparation: 35
+        </p>
+    </div>
 
+</div>
+
+</section><!-- PREDICTION FACTORS --><section id="factors"><h2>Prediction Factors</h2>
+
+<div class="factors">
+
+    <div class="factor-card">
+        <h3>📅 Day</h3>
+        <p>Monday</p>
+    </div>
+
+    <div class="factor-card">
+        <h3>☀️ Weather</h3>
+        <p>Sunny</p>
+    </div>
+
+    <div class="factor-card">
+        <h3>🎉 Holiday</h3>
+        <p>No</p>
+    </div>
+
+    <div class="factor-card">
+        <h3>🏫 College Event</h3>
+        <p>No</p>
+    </div>
+
+    <div class="factor-card">
+        <h3>📊 Previous Sales</h3>
+        <p>Available</p>
+    </div>
+
+</div>
+
+</section><!-- AI RECOMMENDATION --><section id="recommendation"><div class="recommendation">
+
+    <h2>🤖 AI Recommendation</h2>
+
+    <p id="ai-recommendation">
+        Based on the predicted demand, prepare food according
+        to the suggested quantities to reduce food wastage.
+    </p>
+
+    <button onclick="predictDemand()">
+        Generate Prediction
+    </button>
+
+</div>
+
+</section><!-- HISTORY --><section id="history"><h2>Prediction History</h2>
+
+<div id="history-list">
+    <p>Loading prediction history...</p>
+</div>
+
+</section><script>
 
 // ================================
 // PREDICT DEMAND
@@ -336,27 +214,20 @@
 
 async function predictDemand() {
 
-
     const selects =
         document.querySelectorAll(".input-box select");
-
 
     const day =
         selects[0].value;
 
-
     const weather =
         selects[1].value;
-
 
     const holiday =
         selects[2].value;
 
-
     const event =
         selects[3].value;
-
-
 
     // Update prediction factors
 
@@ -364,28 +235,22 @@ async function predictDemand() {
         "#factors .factor-card:nth-child(1) p"
     ).textContent = day;
 
-
     document.querySelector(
         "#factors .factor-card:nth-child(2) p"
     ).textContent = weather;
-
 
     document.querySelector(
         "#factors .factor-card:nth-child(3) p"
     ).textContent = holiday;
 
-
     document.querySelector(
         "#factors .factor-card:nth-child(4) p"
     ).textContent = event;
 
-
-
     try {
 
-
         const response = await fetch(
-            "https://smartcanteenai-zvw2.onrender.com/predict"
+            "https://smartcanteenai-zvw2.onrender.com/predict",
             {
                 method: "POST",
 
@@ -408,68 +273,54 @@ async function predictDemand() {
             }
         );
 
-
+        if (!response.ok) {
+            throw new Error(
+                "Server returned status " + response.status
+            );
+        }
 
         const data =
             await response.json();
 
-
-
         console.log(data);
-
-
 
         // ================================
         // UPDATE DEMAND
         // ================================
-
 
         document.getElementById(
             "burger-demand"
         ).textContent =
             data.predictions["Veg Burger"];
 
-
-
         document.getElementById(
             "sandwich-demand"
         ).textContent =
             data.predictions["Veg Sandwich"];
-
-
 
         document.getElementById(
             "dosa-demand"
         ).textContent =
             data.predictions["Masala Dosa"];
 
-
-
         document.getElementById(
             "fried-rice-demand"
         ).textContent =
             data.predictions["Veg Fried Rice"];
-
-
 
         document.getElementById(
             "idli-demand"
         ).textContent =
             data.predictions["Idli"];
 
-
-
         document.getElementById(
             "paneer-roll-demand"
         ).textContent =
             data.predictions["Paneer Roll"];
 
-
-
         // ================================
         // UPDATE PREPARATION
         // ================================
-
 
         document.getElementById(
             "burger-preparation"
@@ -477,15 +328,11 @@ async function predictDemand() {
             "Suggested Preparation: " +
             data.preparation["Veg Burger"];
 
-
-
         document.getElementById(
             "sandwich-preparation"
         ).textContent =
             "Suggested Preparation: " +
             data.preparation["Veg Sandwich"];
-
-
 
         document.getElementById(
             "dosa-preparation"
@@ -493,15 +340,11 @@ async function predictDemand() {
             "Suggested Preparation: " +
             data.preparation["Masala Dosa"];
 
-
-
         document.getElementById(
             "fried-rice-preparation"
         ).textContent =
             "Suggested Preparation: " +
             data.preparation["Veg Fried Rice"];
-
-
 
         document.getElementById(
             "idli-preparation"
@@ -509,20 +352,15 @@ async function predictDemand() {
             "Suggested Preparation: " +
             data.preparation["Idli"];
 
-
-
         document.getElementById(
             "paneer-roll-preparation"
         ).textContent =
             "Suggested Preparation: " +
             data.preparation["Paneer Roll"];
 
-
-
         // ================================
         // AI RECOMMENDATION
         // ================================
-
 
         const highestDemand =
             Math.max(
@@ -541,64 +379,49 @@ async function predictDemand() {
 
             );
 
-
-
         if (highestDemand >= 80) {
-
 
             document.getElementById(
                 "ai-recommendation"
             ).textContent =
                 "High demand expected. Prepare extra food to meet the expected demand and avoid shortages.";
 
-
         }
 
         else if (highestDemand >= 50) {
-
 
             document.getElementById(
                 "ai-recommendation"
             ).textContent =
                 "Moderate demand expected. Prepare according to the suggested quantities.";
 
-
         }
 
         else {
-
 
             document.getElementById(
                 "ai-recommendation"
             ).textContent =
                 "Lower demand expected. Prepare carefully to reduce food wastage.";
 
-
         }
-
-
 
         // Refresh history
 
         loadHistory();
 
-
-
         alert(
             "Prediction generated successfully!"
         );
-
 
     }
 
     catch (error) {
 
-
         console.error(
             "Error:",
             error
         );
-
 
         alert(
             "Something went wrong while displaying the prediction."
@@ -608,53 +431,46 @@ async function predictDemand() {
 
 }
 
-
-
 // ================================
 // LOAD PREDICTION HISTORY
 // ================================
 
 async function loadHistory() {
 
-
     try {
-
 
         const response =
             await fetch(
                 "https://smartcanteenai-zvw2.onrender.com/history"
             );
 
+        if (!response.ok) {
+            throw new Error(
+                "History request failed: " + response.status
+            );
+        }
 
         const data =
             await response.json();
-
 
         const historyList =
             document.getElementById(
                 "history-list"
             );
 
-
         historyList.innerHTML = "";
-
-
 
         if (
             !data.history ||
             data.history.length === 0
         ) {
 
-
             historyList.innerHTML =
                 "<p>No prediction history available.</p>";
-
 
             return;
 
         }
-
-
 
         data.history
             .slice()
@@ -662,16 +478,13 @@ async function loadHistory() {
             .forEach(
                 (record, index) => {
 
-
                     const card =
                         document.createElement(
                             "div"
                         );
 
-
                     card.className =
                         "history-card";
-
 
                     card.innerHTML = `
 
@@ -706,25 +519,20 @@ async function loadHistory() {
 
                     `;
 
-
                     historyList.appendChild(
                         card
                     );
 
-
                 }
             );
-
 
     }
 
     catch (error) {
 
-
         console.error(
             error
         );
-
 
         document.getElementById(
             "history-list"
@@ -735,15 +543,9 @@ async function loadHistory() {
 
 }
 
-
-
 // Load history when page opens
 
 loadHistory();
 
-
-</script>
-
-
-</body>
+</script></body>
 </html>
