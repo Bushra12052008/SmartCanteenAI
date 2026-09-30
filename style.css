@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #64B5F6;
+    color: #102A43;
+}
+
+header {
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 38px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+nav {
+    background-color: #1565C0;
+    padding: 18px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+section {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+.summary,
+.menu,
+.factors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.summary div {
+    background-color: white;
+    width: 200px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.summary p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1565C0;
+}
+
+.input-box {
+    background-color: white;
+    max-width: 500px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.input-box label {
+    display: block;
+    text-align: left;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.input-box select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #90CAF9;
+    border-radius: 6px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1565C0;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0D47A1;
+}
+
+.food-card {
+    background-color: white;
+    width: 220px;
+    padding: 22px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.food-card strong {
+    display: block;
+    font-size: 32px;
+    color: #1565C0;
+    margin: 10px;
+}
+
+.factor-card {
+    background-color: white;
+    width: 180px;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.recommendation {
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.recommendation h2 {
+    color: #1565C0;
+}
+
+@media (max-width: 600px) {
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .food-card,
+    .factor-card,
+    .summary div {
+        width: 90%;
+    }
+}

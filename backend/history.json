@@ -1,0 +1,327 @@
+[
+    {
+        "time": "2026-09-29 21:28:01",
+        "input": {
+            "day": "Friday",
+            "weather": "Rainy",
+            "holiday": "No",
+            "college_event": "Yes"
+        },
+        "predictions": {
+            "Veg Burger": 60,
+            "Veg Sandwich": 55,
+            "Masala Dosa": 85,
+            "Veg Fried Rice": 85,
+            "Idli": 70,
+            "Paneer Roll": 50
+        },
+        "preparation": {
+            "Veg Burger": 65,
+            "Veg Sandwich": 60,
+            "Masala Dosa": 90,
+            "Veg Fried Rice": 90,
+            "Idli": 75,
+            "Paneer Roll": 55
+        }
+    },
+    {
+        "time": "2026-09-29 21:28:09",
+        "input": {
+            "day": "Thursday",
+            "weather": "Rainy",
+            "holiday": "No",
+            "college_event": "Yes"
+        },
+        "predictions": {
+            "Veg Burger": 55,
+            "Veg Sandwich": 50,
+            "Masala Dosa": 80,
+            "Veg Fried Rice": 80,
+            "Idli": 65,
+            "Paneer Roll": 45
+        },
+        "preparation": {
+            "Veg Burger": 60,
+            "Veg Sandwich": 55,
+            "Masala Dosa": 85,
+            "Veg Fried Rice": 85,
+            "Idli": 70,
+            "Paneer Roll": 50
+        }
+    },
+    {
+        "time": "2026-09-29 21:28:13",
+        "input": {
+            "day": "Thursday",
+            "weather": "Rainy",
+            "holiday": "No",
+            "college_event": "Yes"
+        },
+        "predictions": {
+            "Veg Burger": 55,
+            "Veg Sandwich": 50,
+            "Masala Dosa": 80,
+            "Veg Fried Rice": 80,
+            "Idli": 65,
+            "Paneer Roll": 45
+        },
+        "preparation": {
+            "Veg Burger": 60,
+            "Veg Sandwich": 55,
+            "Masala Dosa": 85,
+            "Veg Fried Rice": 85,
+            "Idli": 70,
+            "Paneer Roll": 50
+        }
+    },
+    {
+        "time": "2026-09-29 21:28:21",
+        "input": {
+            "day": "Thursday",
+            "weather": "Rainy",
+            "holiday": "No",
+            "college_event": "No"
+        },
+        "predictions": {
+            "Veg Burger": 40,
+            "Veg Sandwich": 35,
+            "Masala Dosa": 65,
+            "Veg Fried Rice": 65,
+            "Idli": 50,
+            "Paneer Roll": 30
+        },
+        "preparation": {
+            "Veg Burger": 45,
+            "Veg Sandwich": 40,
+            "Masala Dosa": 70,
+            "Veg Fried Rice": 70,
+            "Idli": 55,
+            "Paneer Roll": 35
+        }
+    },
+    {
+        "time": "2026-09-29 21:28:24",
+        "input": {
+            "day": "Thursday",
+            "weather": "Rainy",
+            "holiday": "No",
+            "college_event": "No"
+        },
+        "predictions": {
+            "Veg Burger": 40,
+            "Veg Sandwich": 35,
+            "Masala Dosa": 65,
+            "Veg Fried Rice": 65,
+            "Idli": 50,
+            "Paneer Roll": 30
+        },
+        "preparation": {
+            "Veg Burger": 45,
+            "Veg Sandwich": 40,
+            "Masala Dosa": 70,
+            "Veg Fried Rice": 70,
+            "Idli": 55,
+            "Paneer Roll": 35
+        }
+    },
+    {
+        "time": "2026-09-29 21:32:07",
+        "input": {
+            "day": "Friday",
+            "weather": "Rainy",
+            "holiday": "Yes",
+            "college_event": "Yes"
+        },
+        "predictions": {
+            "Veg Burger": 50,
+            "Veg Sandwich": 45,
+            "Masala Dosa": 75,
+            "Veg Fried Rice": 75,
+            "Idli": 60,
+            "Paneer Roll": 40
+        },
+        "preparation": {
+            "Veg Burger": 55,
+            "Veg Sandwich": 50,
+            "Masala Dosa": 80,
+            "Veg Fried Rice": 80,
+            "Idli": 65,
+            "Paneer Roll": 45
+        }
+    },
+    {
+        "time": "2026-09-29 21:32:27",
+        "input": {
+            "day": "Friday",
+            "weather": "Rainy",
+            "holiday": "Yes",
+            "college_event": "Yes"
+        },
+        "predictions": {
+            "Veg Burger": 50,
+            "Veg Sandwich": 45,
+            "Masala Dosa": 75,
+            "Veg Fried Rice": 75,
+            "Idli": 60,
+            "Paneer Roll": 40
+        },
+        "preparation": {
+            "Veg Burger": 55,
+            "Veg Sandwich": 50,
+            "Masala Dosa": 80,
+            "Veg Fried Rice": 80,
+            "Idli": 65,
+            "Paneer Roll": 45
+        }
+    },
+    {
+        "time": "2026-09-29 21:37:52",
+        "input": {
+            "day": "Friday",
+            "weather": "Cloudy",
+            "holiday": "No",
+            "college_event": "Yes"
+        },
+        "predictions": {
+            "Veg Burger": 65,
+            "Veg Sandwich": 55,
+            "Masala Dosa": 75,
+            "Veg Fried Rice": 85,
+            "Idli": 60,
+            "Paneer Roll": 50
+        },
+        "preparation": {
+            "Veg Burger": 70,
+            "Veg Sandwich": 60,
+            "Masala Dosa": 80,
+            "Veg Fried Rice": 90,
+            "Idli": 65,
+            "Paneer Roll": 55
+        }
+    },
+    {
+        "time": "2026-09-29 21:38:11",
+        "input": {
+            "day": "Friday",
+            "weather": "Cloudy",
+            "holiday": "No",
+            "college_event": "Yes"
+        },
+        "predictions": {
+            "Veg Burger": 65,
+            "Veg Sandwich": 55,
+            "Masala Dosa": 75,
+            "Veg Fried Rice": 85,
+            "Idli": 60,
+            "Paneer Roll": 50
+        },
+        "preparation": {
+            "Veg Burger": 70,
+            "Veg Sandwich": 60,
+            "Masala Dosa": 80,
+            "Veg Fried Rice": 90,
+            "Idli": 65,
+            "Paneer Roll": 55
+        }
+    },
+    {
+        "time": "2026-09-29 21:39:59",
+        "input": {
+            "day": "Friday",
+            "weather": "Rainy",
+            "holiday": "No",
+            "college_event": "Yes"
+        },
+        "predictions": {
+            "Veg Burger": 60,
+            "Veg Sandwich": 55,
+            "Masala Dosa": 85,
+            "Veg Fried Rice": 85,
+            "Idli": 70,
+            "Paneer Roll": 50
+        },
+        "preparation": {
+            "Veg Burger": 65,
+            "Veg Sandwich": 60,
+            "Masala Dosa": 90,
+            "Veg Fried Rice": 90,
+            "Idli": 75,
+            "Paneer Roll": 55
+        }
+    },
+    {
+        "time": "2026-09-29 21:40:24",
+        "input": {
+            "day": "Friday",
+            "weather": "Rainy",
+            "holiday": "No",
+            "college_event": "Yes"
+        },
+        "predictions": {
+            "Veg Burger": 60,
+            "Veg Sandwich": 55,
+            "Masala Dosa": 85,
+            "Veg Fried Rice": 85,
+            "Idli": 70,
+            "Paneer Roll": 50
+        },
+        "preparation": {
+            "Veg Burger": 65,
+            "Veg Sandwich": 60,
+            "Masala Dosa": 90,
+            "Veg Fried Rice": 90,
+            "Idli": 75,
+            "Paneer Roll": 55
+        }
+    },
+    {
+        "time": "2026-09-30 09:22:17",
+        "input": {
+            "day": "Friday",
+            "weather": "Rainy",
+            "holiday": "No",
+            "college_event": "Yes"
+        },
+        "predictions": {
+            "Veg Burger": 60,
+            "Veg Sandwich": 55,
+            "Masala Dosa": 85,
+            "Veg Fried Rice": 85,
+            "Idli": 70,
+            "Paneer Roll": 50
+        },
+        "preparation": {
+            "Veg Burger": 65,
+            "Veg Sandwich": 60,
+            "Masala Dosa": 90,
+            "Veg Fried Rice": 90,
+            "Idli": 75,
+            "Paneer Roll": 55
+        }
+    },
+    {
+        "time": "2026-09-30 09:22:30",
+        "input": {
+            "day": "Friday",
+            "weather": "Rainy",
+            "holiday": "No",
+            "college_event": "Yes"
+        },
+        "predictions": {
+            "Veg Burger": 60,
+            "Veg Sandwich": 55,
+            "Masala Dosa": 85,
+            "Veg Fried Rice": 85,
+            "Idli": 70,
+            "Paneer Roll": 50
+        },
+        "preparation": {
+            "Veg Burger": 65,
+            "Veg Sandwich": 60,
+            "Masala Dosa": 90,
+            "Veg Fried Rice": 90,
+            "Idli": 75,
+            "Paneer Roll": 55
+        }
+    }
+]
